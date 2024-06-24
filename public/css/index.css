@@ -1,0 +1,116 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav
+{
+    background-color: white;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.title
+{
+    border: none;
+    background: none;
+}
+
+.logout-btn-navbar
+{
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    color:white;
+    cursor: pointer;
+}
+
+.root-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.main-frame
+{
+    background-color: #eeeeee;
+    width: 90%;
+    text-align: center;
+    border-radius: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.add-panel
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#todo-title
+{
+    width: 90%;
+    background-color: #dddddd;
+    color: black;
+    border: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-size: 21px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.a-btn
+{
+    width: 10%;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 21px;
+
+}
+
+.todo-container
+{
+    /* background-color: aqua; */
+    overflow:scroll; max-height:400px;
+}
+
+.todo
+{
+    background-color: #dddddd;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.todo-button-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.del-btn
+{
+    background-color: limegreen;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}

@@ -1,0 +1,103 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav
+{
+    background-color: white;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.title
+{
+    border: none;
+    background: none;
+}
+
+.register-btn-navbar
+{
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    color:white;
+    cursor: pointer;
+}
+
+.root-container
+{
+    margin-top: -18px;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    align-items: center;
+    height: 91vh;
+}
+
+.main-frame
+{
+    background-color: #eeeeee;
+    width: 90%;
+    text-align: center;
+    border-radius: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.login-tag
+{
+    margin-top: -5px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    border-radius: 3px;
+}
+
+.main-frame input
+{
+    font-size: 21px;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    color: black;
+    margin-bottom: 5px;
+    background-color: #dddddd;
+}
+
+.main-frame button
+{
+    background-color: dodgerblue;
+    font-size: 21px;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.err-msg
+{
+    margin: 0;
+    /* background-color: aqua; */
+    font-size: 21px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title></title>
+</head>
+
+<body>
+
+    <nav>
+        <button class="title">
+            <h1>TaskDone</h1>
+        </button>
+        <form action="/logout" method="get"><button type="submit" class="logout-btn-navbar">Logout</button></form>
+    </nav>
+
+    <br>
+
+    <div class="root-container">
+        <div class="main-frame">
+
+            <h5 class="user-tag">User : <%=usr.username%></h5>
+            <hr>
+
+            <form class="add-panel" , action='/add-todo' method="post">
+                <input type="text" name="todoTitle" id="todo-title" placeholder="Enter Your Todo">
+                <button class="a-btn" type="submit">+</button>
+            </form>
+
+            <hr>
+
+            <div class="todo-container">
+                <% todo.forEach(todo=> { %>
+                    <div class="todo">
+                        <p class="todo-title">
+                            <%=todo.title %>
+                        </p>
+                        <form action="/delete-todo/<%=todo.id %>" method="post"><button class="del-btn"
+                                type="submit">Done</button></form>
+                    </div>
+                <% }) %>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <title></title>
+</head>
+
+<body>
+
+    <nav>
+        <button class="title"><h1>TaskDone</h1></button>
+        <form action="/register"><button type="submit" class="register-btn-navbar">Register</button></form>
+    </nav>
+
+    <br>
+
+    <div class="root-container">
+        <form action="/check-usr" method="post" class="main-frame">
+            <h5 class="login-tag">Login</h5>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+            <p class="err-msg" style="color: red;"><%=data.msg%></p>
+        </form>
+    </div>
+
+</body>
+
+</html>
